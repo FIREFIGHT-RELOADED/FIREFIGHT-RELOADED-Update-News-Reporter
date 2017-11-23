@@ -1,8 +1,0 @@
-C:\Users\BITL\Documents\SharpDevelop Projects\FR_UpdateNewsReporter\FR_UpdateNewsReporter\obj\Debug\FR_UpdateNewsReporter.csprojResolveAssemblyReference.cache
-C:\Users\BITL\Documents\SharpDevelop Projects\FR_UpdateNewsReporter\FR_UpdateNewsReporter\obj\Debug\FR_UpdateNewsReporter.MainForm.resources
-C:\Users\BITL\Documents\SharpDevelop Projects\FR_UpdateNewsReporter\FR_UpdateNewsReporter\obj\Debug\FR_UpdateNewsReporter.csproj.GenerateResource.Cache
-C:\Users\BITL\Documents\SharpDevelop Projects\FR_UpdateNewsReporter\FR_UpdateNewsReporter\bin\Debug\FR_UpdateNewsReporter.exe
-C:\Users\BITL\Documents\SharpDevelop Projects\FR_UpdateNewsReporter\FR_UpdateNewsReporter\bin\Debug\FR_UpdateNewsReporter.pdb
-C:\Users\BITL\Documents\SharpDevelop Projects\FR_UpdateNewsReporter\FR_UpdateNewsReporter\obj\Debug\FR_UpdateNewsReporter.exe
-C:\Users\BITL\Documents\SharpDevelop Projects\FR_UpdateNewsReporter\FR_UpdateNewsReporter\obj\Debug\FR_UpdateNewsReporter.pdb
-C:\Users\BITL\Documents\SharpDevelop Projects\FR_UpdateNewsReporter\FR_UpdateNewsReporter\obj\Debug\FR_UpdateNewsReporter.ResultForm.resources

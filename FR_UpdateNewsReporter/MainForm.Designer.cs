@@ -46,6 +46,8 @@ namespace FR_UpdateNewsReporter
 			this.checkBox1 = new System.Windows.Forms.CheckBox();
 			this.richTextBox1 = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.textBox2 = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -58,9 +60,9 @@ namespace FR_UpdateNewsReporter
 			// 
 			// label2
 			// 
-			this.label2.Location = new System.Drawing.Point(137, 20);
+			this.label2.Location = new System.Drawing.Point(13, 20);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(84, 16);
+			this.label2.Size = new System.Drawing.Size(343, 16);
 			this.label2.TabIndex = 1;
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
@@ -82,7 +84,7 @@ namespace FR_UpdateNewsReporter
 			// 
 			// label5
 			// 
-			this.label5.Location = new System.Drawing.Point(160, 114);
+			this.label5.Location = new System.Drawing.Point(160, 162);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(52, 16);
 			this.label5.TabIndex = 6;
@@ -109,25 +111,43 @@ namespace FR_UpdateNewsReporter
 			// 
 			// richTextBox1
 			// 
-			this.richTextBox1.Location = new System.Drawing.Point(12, 133);
+			this.richTextBox1.Location = new System.Drawing.Point(12, 181);
 			this.richTextBox1.Multiline = true;
 			this.richTextBox1.Name = "richTextBox1";
-			this.richTextBox1.Size = new System.Drawing.Size(344, 285);
+			this.richTextBox1.Size = new System.Drawing.Size(344, 237);
 			this.richTextBox1.TabIndex = 10;
 			// 
 			// label4
 			// 
 			this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.label4.Location = new System.Drawing.Point(12, 110);
+			this.label4.Location = new System.Drawing.Point(12, 160);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(345, 2);
 			this.label4.TabIndex = 11;
+			// 
+			// label6
+			// 
+			this.label6.Location = new System.Drawing.Point(148, 114);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(70, 17);
+			this.label6.TabIndex = 12;
+			this.label6.Text = "Discord Link:";
+			// 
+			// textBox2
+			// 
+			this.textBox2.Location = new System.Drawing.Point(13, 130);
+			this.textBox2.Name = "textBox2";
+			this.textBox2.Size = new System.Drawing.Size(345, 20);
+			this.textBox2.TabIndex = 13;
+			this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(369, 449);
+			this.Controls.Add(this.textBox2);
+			this.Controls.Add(this.label6);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.richTextBox1);
 			this.Controls.Add(this.checkBox1);
@@ -146,6 +166,8 @@ namespace FR_UpdateNewsReporter
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.CheckBox checkBox1;
 		private System.Windows.Forms.Button button1;

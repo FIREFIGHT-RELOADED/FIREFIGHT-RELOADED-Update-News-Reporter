@@ -43,6 +43,7 @@ namespace FR_UpdateNewsReporter
 			this.label2 = new System.Windows.Forms.Label();
 			this.richTextBox1 = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
+			this.textBox3 = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
 			// textBox1
@@ -89,7 +90,7 @@ namespace FR_UpdateNewsReporter
 			this.richTextBox1.Multiline = true;
 			this.richTextBox1.Name = "richTextBox1";
 			this.richTextBox1.ReadOnly = true;
-			this.richTextBox1.Size = new System.Drawing.Size(721, 294);
+			this.richTextBox1.Size = new System.Drawing.Size(721, 282);
 			this.richTextBox1.TabIndex = 5;
 			// 
 			// label3
@@ -100,11 +101,22 @@ namespace FR_UpdateNewsReporter
 			this.label3.Size = new System.Drawing.Size(721, 2);
 			this.label3.TabIndex = 6;
 			// 
+			// textBox3
+			// 
+			this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+									| System.Windows.Forms.AnchorStyles.Right)));
+			this.textBox3.Location = new System.Drawing.Point(13, 402);
+			this.textBox3.Name = "textBox3";
+			this.textBox3.ReadOnly = true;
+			this.textBox3.Size = new System.Drawing.Size(720, 20);
+			this.textBox3.TabIndex = 7;
+			// 
 			// ResultForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(745, 420);
+			this.ClientSize = new System.Drawing.Size(745, 434);
+			this.Controls.Add(this.textBox3);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.richTextBox1);
 			this.Controls.Add(this.label2);
@@ -118,6 +130,7 @@ namespace FR_UpdateNewsReporter
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.TextBox textBox3;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
