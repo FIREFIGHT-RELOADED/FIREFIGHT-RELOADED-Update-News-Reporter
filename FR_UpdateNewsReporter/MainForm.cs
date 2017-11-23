@@ -72,7 +72,7 @@ namespace FR_UpdateNewsReporter
 			ResultForm btnFm1 = new ResultForm();
 			btnFm1.textBox1.Text = title;
 			btnFm1.textBox2.Text = contentstarter;
-			btnFm1.textBox2.Text = discord;
+			btnFm1.textBox3.Text = discord;
 			btnFm1.richTextBox1.Text = richTextBox1.Text;
 			btnFm1.Show();
 		}
