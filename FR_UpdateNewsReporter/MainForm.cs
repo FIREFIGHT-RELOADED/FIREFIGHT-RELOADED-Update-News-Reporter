@@ -45,6 +45,10 @@ namespace FR_UpdateNewsReporter
 			{
 				title = "Update for FIREFIGHT RELOADED SDK Released (" + label2.Text + ", " + textBox1.Text + ")";
 			}
+			else if (checkBox2.Checked != false)
+			{
+				title = "Update for FIREFIGHT RELOADED SDK Released (" + label2.Text + ")";
+			}
 			else if (checkBox2.Checked != false && checkBox1.Checked != false)
 			{
 				title = "Major Update for FIREFIGHT RELOADED SDK Released (" + label2.Text + ")";
