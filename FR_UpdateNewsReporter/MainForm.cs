@@ -30,73 +30,72 @@ namespace FR_UpdateNewsReporter
 
 		void MainFormLoad(object sender, EventArgs e)
 		{
-			label2.Text = DateTime.Now.ToString("MM-dd-yyyy");
+			DateLabel.Text = DateTime.Now.ToString("MM-dd-yyyy");
 		}
 
 		void Button1Click(object sender, System.EventArgs e)
 		{
-			string title = "Update for FIREFIGHT RELOADED Released (06-10-1998)";
+			string gameName = "FIREFIGHT RELOADED";
 
-			if (textBox1.Text != "" && checkBox2.Checked != false && checkBox1.Checked != false)
+			if (SDKUpdate.Checked)
 			{
-				title = "Major Update for FIREFIGHT RELOADED SDK Released (" + label2.Text + ", " + textBox1.Text + ")";
+				gameName += "'s SDK";
 			}
-			else if (textBox1.Text != "" && checkBox2.Checked != false)
+			else if (Snapshot.Checked)
 			{
-				title = "Update for FIREFIGHT RELOADED SDK Released (" + label2.Text + ", " + textBox1.Text + ")";
+				gameName += "'s Snapshot";
 			}
-			else if (checkBox2.Checked != false)
-			{
-				title = "Update for FIREFIGHT RELOADED SDK Released (" + label2.Text + ")";
-			}
-			else if (checkBox2.Checked != false && checkBox1.Checked != false)
-			{
-				title = "Major Update for FIREFIGHT RELOADED SDK Released (" + label2.Text + ")";
-			}
-			else if (textBox1.Text != "" && checkBox1.Checked != false)
-			{
-				title = "Major Update for FIREFIGHT RELOADED Released (" + label2.Text + ", " + textBox1.Text + ")";
-			}
-			else if (textBox1.Text != "")
-			{
-				title = "Update for FIREFIGHT RELOADED Released (" + label2.Text + ", " + textBox1.Text + ")";
-			}
-			else if (checkBox1.Checked != false)
-			{
-				title = "Major Update for FIREFIGHT RELOADED Released (" + label2.Text + ")";
+
+			string title = "";
+
+			if (MajorUpdate.Checked)
+            {
+				title += "Major Update for ";
 			}
 			else
-			{
-				title = "Update for FIREFIGHT RELOADED Released (" + label2.Text + ")";
+            {
+				title += "Update for ";
 			}
 
-			string contentstarter = "An update for FIREFIGHT RELOADED has been released. The update will be applied when you restart FIREFIGHT RELOADED.";
+			title += gameName + " Released (" + DateLabel.Text + 
+				((!string.IsNullOrWhiteSpace(NameBox.Text)) ? ", " + NameBox.Text : "") 
+				+ ")";
 
-			if (checkBox1.Checked != false && checkBox2.Checked != false)
+			string content = "";
+
+			if (MajorUpdate.Checked)
 			{
-				contentstarter = "A major update for FIREFIGHT RELOADED's SDK has been released. The update will be applied when you restart FIREFIGHT RELOADED's SDK.";
-			}
-			else if (checkBox1.Checked != false)
-			{
-				contentstarter = "A major update for FIREFIGHT RELOADED has been released. The update will be applied when you restart FIREFIGHT RELOADED.";
-			}
-			else if (checkBox2.Checked != false)
-			{
-				contentstarter = "An update for FIREFIGHT RELOADED's SDK has been released. The update will be applied when you restart FIREFIGHT RELOADED's SDK.";
+				content += "A major update ";
 			}
 			else
-			{
-				contentstarter = "An update for FIREFIGHT RELOADED has been released. The update will be applied when you restart FIREFIGHT RELOADED.";
+            {
+				content += "An update ";
 			}
 
-			string discord = "Be sure to join our Discord server here: " + textBox2.Text + " for more future updates!";
+			content += "for " + gameName + " has been released. The update will be applied when you restart " + gameName + ".";
+			string discord = "Be sure to join our Discord server here: " + DiscordBox.Text + " for more future updates!";
+			content += "\r\n\r\n" + ChangesBox.Text + "\r\n\r\n" + discord;
 
 			ResultForm btnFm1 = new ResultForm();
-			btnFm1.textBox1.Text = title;
-			btnFm1.textBox2.Text = contentstarter;
-			btnFm1.textBox3.Text = discord;
-			btnFm1.richTextBox1.Text = richTextBox1.Text;
+			btnFm1.TitleBox.Text = title;
+			btnFm1.ContentsBox.Text = content;
 			btnFm1.Show();
 		}
+
+        private void Snapshot_CheckedChanged(object sender, EventArgs e)
+        {
+			if (Snapshot.Checked)
+			{
+				SDKUpdate.Checked = false;
+			}
+		}
+
+        private void SDKUpdate_CheckedChanged(object sender, EventArgs e)
+        {
+			if (SDKUpdate.Checked)
+			{
+				Snapshot.Checked = false;
+			}
+        }
     }
 }

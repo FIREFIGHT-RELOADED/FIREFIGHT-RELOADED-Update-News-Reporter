@@ -40,137 +40,151 @@ namespace FR_UpdateNewsReporter
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.DateLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.NameBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.richTextBox1 = new System.Windows.Forms.TextBox();
+            this.CreatePost = new System.Windows.Forms.Button();
+            this.MajorUpdate = new System.Windows.Forms.CheckBox();
+            this.ChangesBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.DiscordBox = new System.Windows.Forms.TextBox();
+            this.SDKUpdate = new System.Windows.Forms.CheckBox();
+            this.Snapshot = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(160, 4);
+            this.label1.Location = new System.Drawing.Point(109, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Date:";
             // 
-            // label2
+            // DateLabel
             // 
-            this.label2.Location = new System.Drawing.Point(13, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(343, 16);
-            this.label2.TabIndex = 1;
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.DateLabel.Location = new System.Drawing.Point(170, 9);
+            this.DateLabel.Name = "DateLabel";
+            this.DateLabel.Size = new System.Drawing.Size(118, 16);
+            this.DateLabel.TabIndex = 1;
+            this.DateLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(137, 43);
+            this.label3.Location = new System.Drawing.Point(56, 27);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "Name (Optional):";
             // 
-            // textBox1
+            // NameBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 61);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(345, 20);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.NameBox.Location = new System.Drawing.Point(145, 25);
+            this.NameBox.Name = "NameBox";
+            this.NameBox.Size = new System.Drawing.Size(169, 20);
+            this.NameBox.TabIndex = 3;
+            this.NameBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(160, 162);
+            this.label5.Location = new System.Drawing.Point(160, 97);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 16);
             this.label5.TabIndex = 6;
             this.label5.Text = "Changes:";
             // 
-            // button1
+            // CreatePost
             // 
-            this.button1.Location = new System.Drawing.Point(148, 424);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Create Post";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1Click);
+            this.CreatePost.Location = new System.Drawing.Point(12, 274);
+            this.CreatePost.Name = "CreatePost";
+            this.CreatePost.Size = new System.Drawing.Size(344, 23);
+            this.CreatePost.TabIndex = 8;
+            this.CreatePost.Text = "Create Post";
+            this.CreatePost.UseVisualStyleBackColor = true;
+            this.CreatePost.Click += new System.EventHandler(this.Button1Click);
             // 
-            // checkBox1
+            // MajorUpdate
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(55, 87);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(138, 17);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "Major Update (Optional)";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.MajorUpdate.AutoSize = true;
+            this.MajorUpdate.Location = new System.Drawing.Point(74, 73);
+            this.MajorUpdate.Name = "MajorUpdate";
+            this.MajorUpdate.Size = new System.Drawing.Size(90, 17);
+            this.MajorUpdate.TabIndex = 9;
+            this.MajorUpdate.Text = "Major Update";
+            this.MajorUpdate.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
+            // ChangesBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 181);
-            this.richTextBox1.Multiline = true;
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(344, 237);
-            this.richTextBox1.TabIndex = 10;
+            this.ChangesBox.Location = new System.Drawing.Point(12, 116);
+            this.ChangesBox.Multiline = true;
+            this.ChangesBox.Name = "ChangesBox";
+            this.ChangesBox.Size = new System.Drawing.Size(344, 152);
+            this.ChangesBox.TabIndex = 10;
             // 
             // label4
             // 
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Location = new System.Drawing.Point(12, 160);
+            this.label4.Location = new System.Drawing.Point(12, 95);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(345, 2);
             this.label4.TabIndex = 11;
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(148, 114);
+            this.label6.Location = new System.Drawing.Point(56, 49);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 17);
             this.label6.TabIndex = 12;
             this.label6.Text = "Discord Link:";
             // 
-            // textBox2
+            // DiscordBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(13, 130);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(345, 20);
-            this.textBox2.TabIndex = 13;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DiscordBox.Location = new System.Drawing.Point(145, 47);
+            this.DiscordBox.Name = "DiscordBox";
+            this.DiscordBox.Size = new System.Drawing.Size(169, 20);
+            this.DiscordBox.TabIndex = 13;
+            this.DiscordBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // checkBox2
+            // SDKUpdate
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(199, 87);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(86, 17);
-            this.checkBox2.TabIndex = 14;
-            this.checkBox2.Text = "SDK Update";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.SDKUpdate.AutoSize = true;
+            this.SDKUpdate.Location = new System.Drawing.Point(163, 73);
+            this.SDKUpdate.Name = "SDKUpdate";
+            this.SDKUpdate.Size = new System.Drawing.Size(48, 17);
+            this.SDKUpdate.TabIndex = 14;
+            this.SDKUpdate.Text = "SDK";
+            this.SDKUpdate.UseVisualStyleBackColor = true;
+            this.SDKUpdate.CheckedChanged += new System.EventHandler(this.SDKUpdate_CheckedChanged);
+            // 
+            // Snapshot
+            // 
+            this.Snapshot.AutoSize = true;
+            this.Snapshot.Location = new System.Drawing.Point(217, 73);
+            this.Snapshot.Name = "Snapshot";
+            this.Snapshot.Size = new System.Drawing.Size(71, 17);
+            this.Snapshot.TabIndex = 15;
+            this.Snapshot.Text = "Snapshot";
+            this.Snapshot.UseVisualStyleBackColor = true;
+            this.Snapshot.CheckedChanged += new System.EventHandler(this.Snapshot_CheckedChanged);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(369, 449);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(369, 307);
+            this.Controls.Add(this.Snapshot);
+            this.Controls.Add(this.SDKUpdate);
+            this.Controls.Add(this.DiscordBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ChangesBox);
+            this.Controls.Add(this.MajorUpdate);
+            this.Controls.Add(this.CreatePost);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.NameBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.DateLabel);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -182,17 +196,18 @@ namespace FR_UpdateNewsReporter
             this.PerformLayout();
 
         }
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox DiscordBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox richTextBox1;
+        private System.Windows.Forms.CheckBox MajorUpdate;
+        private System.Windows.Forms.Button CreatePost;
+        private System.Windows.Forms.TextBox ChangesBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox NameBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label DateLabel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox SDKUpdate;
+        private System.Windows.Forms.CheckBox Snapshot;
     }
 }
