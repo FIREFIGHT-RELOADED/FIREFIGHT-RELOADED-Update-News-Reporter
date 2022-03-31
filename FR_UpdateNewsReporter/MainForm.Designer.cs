@@ -155,7 +155,6 @@ namespace FR_UpdateNewsReporter
             this.SDKUpdate.TabIndex = 14;
             this.SDKUpdate.Text = "SDK";
             this.SDKUpdate.UseVisualStyleBackColor = true;
-            this.SDKUpdate.CheckedChanged += new System.EventHandler(this.SDKUpdate_CheckedChanged);
             // 
             // Snapshot
             // 
@@ -166,7 +165,6 @@ namespace FR_UpdateNewsReporter
             this.Snapshot.TabIndex = 15;
             this.Snapshot.Text = "Snapshot";
             this.Snapshot.UseVisualStyleBackColor = true;
-            this.Snapshot.CheckedChanged += new System.EventHandler(this.Snapshot_CheckedChanged);
             // 
             // MainForm
             // 

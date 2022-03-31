@@ -41,9 +41,17 @@ namespace FR_UpdateNewsReporter
 			{
 				gameName += "'s SDK";
 			}
-			else if (Snapshot.Checked)
+			
+			if (Snapshot.Checked)
 			{
-				gameName += "'s Snapshot";
+				if (!SDKUpdate.Checked)
+				{
+					gameName += "'s Snapshot";
+				}
+				else
+                {
+					gameName += " Snapshot";
+				}
 			}
 
 			string title = "";
@@ -81,21 +89,5 @@ namespace FR_UpdateNewsReporter
 			btnFm1.ContentsBox.Text = content;
 			btnFm1.Show();
 		}
-
-        private void Snapshot_CheckedChanged(object sender, EventArgs e)
-        {
-			if (Snapshot.Checked)
-			{
-				SDKUpdate.Checked = false;
-			}
-		}
-
-        private void SDKUpdate_CheckedChanged(object sender, EventArgs e)
-        {
-			if (SDKUpdate.Checked)
-			{
-				Snapshot.Checked = false;
-			}
-        }
     }
 }
