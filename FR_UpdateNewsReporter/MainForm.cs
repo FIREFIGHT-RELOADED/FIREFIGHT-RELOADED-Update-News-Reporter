@@ -82,7 +82,7 @@ namespace FR_UpdateNewsReporter
 			}
 
 			content += "for " + gameName + " has been released. The update will be applied when you restart " + gameName + ".";
-			string discord = "Be sure to join our Discord server here: " + DiscordBox.Text + " for more future updates!";
+			string discord = "Be sure to join our Discord server at [url]" + DiscordBox.Text + "[/url] for more future updates!";
 			content += "\r\n\r\n" + ChangesBox.Text + "\r\n\r\n" + discord;
 
 			ResultForm btnFm1 = new ResultForm();

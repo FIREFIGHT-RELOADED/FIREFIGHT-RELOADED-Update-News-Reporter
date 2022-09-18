@@ -183,6 +183,7 @@ namespace FR_UpdateNewsReporter
             this.SnapshotNameBox.Name = "SnapshotNameBox";
             this.SnapshotNameBox.Size = new System.Drawing.Size(169, 20);
             this.SnapshotNameBox.TabIndex = 17;
+            this.SnapshotNameBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // MainForm
             // 
