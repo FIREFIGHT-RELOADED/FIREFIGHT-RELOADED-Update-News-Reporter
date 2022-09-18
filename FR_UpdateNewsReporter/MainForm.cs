@@ -44,13 +44,14 @@ namespace FR_UpdateNewsReporter
 			
 			if (Snapshot.Checked)
 			{
-				if (!SDKUpdate.Checked)
+				string snapshotName = (!string.IsNullOrWhiteSpace(SnapshotNameBox.Text) ? SnapshotNameBox.Text : "Snapshot");
+				if (SDKUpdate.Checked)
 				{
-					gameName += "'s Snapshot";
+					gameName += " " + snapshotName;
 				}
 				else
-                {
-					gameName += " Snapshot";
+				{
+					gameName += "'s " + snapshotName;
 				}
 			}
 

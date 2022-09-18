@@ -52,6 +52,8 @@ namespace FR_UpdateNewsReporter
             this.DiscordBox = new System.Windows.Forms.TextBox();
             this.SDKUpdate = new System.Windows.Forms.CheckBox();
             this.Snapshot = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.SnapshotNameBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -64,9 +66,9 @@ namespace FR_UpdateNewsReporter
             // 
             // DateLabel
             // 
-            this.DateLabel.Location = new System.Drawing.Point(170, 9);
+            this.DateLabel.Location = new System.Drawing.Point(145, 9);
             this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(118, 16);
+            this.DateLabel.Size = new System.Drawing.Size(169, 16);
             this.DateLabel.TabIndex = 1;
             this.DateLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -88,7 +90,7 @@ namespace FR_UpdateNewsReporter
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(160, 97);
+            this.label5.Location = new System.Drawing.Point(187, 97);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 16);
             this.label5.TabIndex = 6;
@@ -98,7 +100,7 @@ namespace FR_UpdateNewsReporter
             // 
             this.CreatePost.Location = new System.Drawing.Point(12, 274);
             this.CreatePost.Name = "CreatePost";
-            this.CreatePost.Size = new System.Drawing.Size(344, 23);
+            this.CreatePost.Size = new System.Drawing.Size(406, 23);
             this.CreatePost.TabIndex = 8;
             this.CreatePost.Text = "Create Post";
             this.CreatePost.UseVisualStyleBackColor = true;
@@ -107,7 +109,7 @@ namespace FR_UpdateNewsReporter
             // MajorUpdate
             // 
             this.MajorUpdate.AutoSize = true;
-            this.MajorUpdate.Location = new System.Drawing.Point(74, 73);
+            this.MajorUpdate.Location = new System.Drawing.Point(328, 25);
             this.MajorUpdate.Name = "MajorUpdate";
             this.MajorUpdate.Size = new System.Drawing.Size(90, 17);
             this.MajorUpdate.TabIndex = 9;
@@ -119,7 +121,7 @@ namespace FR_UpdateNewsReporter
             this.ChangesBox.Location = new System.Drawing.Point(12, 116);
             this.ChangesBox.Multiline = true;
             this.ChangesBox.Name = "ChangesBox";
-            this.ChangesBox.Size = new System.Drawing.Size(344, 152);
+            this.ChangesBox.Size = new System.Drawing.Size(406, 152);
             this.ChangesBox.TabIndex = 10;
             // 
             // label4
@@ -127,7 +129,7 @@ namespace FR_UpdateNewsReporter
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label4.Location = new System.Drawing.Point(12, 95);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(345, 2);
+            this.label4.Size = new System.Drawing.Size(406, 2);
             this.label4.TabIndex = 11;
             // 
             // label6
@@ -149,7 +151,7 @@ namespace FR_UpdateNewsReporter
             // SDKUpdate
             // 
             this.SDKUpdate.AutoSize = true;
-            this.SDKUpdate.Location = new System.Drawing.Point(163, 73);
+            this.SDKUpdate.Location = new System.Drawing.Point(328, 49);
             this.SDKUpdate.Name = "SDKUpdate";
             this.SDKUpdate.Size = new System.Drawing.Size(48, 17);
             this.SDKUpdate.TabIndex = 14;
@@ -159,18 +161,36 @@ namespace FR_UpdateNewsReporter
             // Snapshot
             // 
             this.Snapshot.AutoSize = true;
-            this.Snapshot.Location = new System.Drawing.Point(217, 73);
+            this.Snapshot.Location = new System.Drawing.Point(328, 72);
             this.Snapshot.Name = "Snapshot";
             this.Snapshot.Size = new System.Drawing.Size(71, 17);
             this.Snapshot.TabIndex = 15;
             this.Snapshot.Text = "Snapshot";
             this.Snapshot.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(56, 73);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 13);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Snapshot Name";
+            // 
+            // SnapshotNameBox
+            // 
+            this.SnapshotNameBox.Location = new System.Drawing.Point(145, 70);
+            this.SnapshotNameBox.Name = "SnapshotNameBox";
+            this.SnapshotNameBox.Size = new System.Drawing.Size(169, 20);
+            this.SnapshotNameBox.TabIndex = 17;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(369, 307);
+            this.ClientSize = new System.Drawing.Size(430, 307);
+            this.Controls.Add(this.SnapshotNameBox);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.Snapshot);
             this.Controls.Add(this.SDKUpdate);
             this.Controls.Add(this.DiscordBox);
@@ -207,5 +227,7 @@ namespace FR_UpdateNewsReporter
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox SDKUpdate;
         private System.Windows.Forms.CheckBox Snapshot;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox SnapshotNameBox;
     }
 }
