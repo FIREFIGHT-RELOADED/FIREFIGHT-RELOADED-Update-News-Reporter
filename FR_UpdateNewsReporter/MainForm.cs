@@ -44,7 +44,7 @@ namespace FR_UpdateNewsReporter
 			
 			if (Snapshot.Checked)
 			{
-				string snapshotName = (!string.IsNullOrWhiteSpace(SnapshotNameBox.Text) ? SnapshotNameBox.Text : "Snapshot");
+				string snapshotName = (!string.IsNullOrWhiteSpace(NameBox.Text) ? NameBox.Text : "Beta");
 				if (SDKUpdate.Checked)
 				{
 					gameName += " " + snapshotName;

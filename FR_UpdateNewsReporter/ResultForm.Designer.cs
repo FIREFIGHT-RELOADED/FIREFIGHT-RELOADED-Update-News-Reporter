@@ -53,56 +53,64 @@ namespace FR_UpdateNewsReporter
             this.TitleBox.Location = new System.Drawing.Point(13, 31);
             this.TitleBox.Name = "TitleBox";
             this.TitleBox.ReadOnly = true;
-            this.TitleBox.Size = new System.Drawing.Size(721, 20);
+            this.TitleBox.Size = new System.Drawing.Size(939, 20);
             this.TitleBox.TabIndex = 1;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Location = new System.Drawing.Point(13, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 17);
+            this.label1.Size = new System.Drawing.Size(938, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Title:";
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Location = new System.Drawing.Point(13, 69);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 16);
+            this.label2.Size = new System.Drawing.Size(938, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Contents:";
             // 
             // ContentsBox
             // 
-            this.ContentsBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.ContentsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ContentsBox.Location = new System.Drawing.Point(12, 88);
             this.ContentsBox.Multiline = true;
             this.ContentsBox.Name = "ContentsBox";
             this.ContentsBox.ReadOnly = true;
-            this.ContentsBox.Size = new System.Drawing.Size(721, 334);
+            this.ContentsBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.ContentsBox.Size = new System.Drawing.Size(939, 422);
             this.ContentsBox.TabIndex = 5;
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Location = new System.Drawing.Point(13, 62);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(721, 2);
+            this.label3.Size = new System.Drawing.Size(939, 2);
             this.label3.TabIndex = 6;
             // 
             // ResultForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(745, 434);
+            this.ClientSize = new System.Drawing.Size(963, 522);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ContentsBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TitleBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(522, 291);
             this.Name = "ResultForm";
             this.Text = "Results - Copy  & Paste to Announcement";
             this.ResumeLayout(false);
